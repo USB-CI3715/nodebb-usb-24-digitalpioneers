@@ -11,7 +11,7 @@
     "main": "app.js",
     "scripts": {
         "start": "npx tsc && node loader.js",
-        "lint": "npx tsc && eslint --cache ./nodebb .",
+        "lint": "npx tsc && eslint --cache ./src",
         "test": "npx tsc && nyc --reporter=html --reporter=text-summary mocha",
         "coverage": "nyc report --reporter=text-lcov > ./coverage/lcov.info",
         "coveralls": "nyc report --reporter=text-lcov | coveralls && rm -r coverage"

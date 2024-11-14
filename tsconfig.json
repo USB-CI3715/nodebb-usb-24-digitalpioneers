@@ -4,14 +4,15 @@
     "target": "es2017",
     "module": "commonjs",
     "moduleResolution": "node",
-    "esModuleInterop": true,
+    "outDir": "./dist", 
+    "esModuleInterop": true
   },
   "include": [
     "public/src/**/*",
-    "src/**/*", 
-    "test/**/*",
+    "src/**/*",
+    "test/**/*"
   ],
-  "exclude":[
-    "node_modules",
+  "exclude": [
+    "node_modules"
   ]
 }

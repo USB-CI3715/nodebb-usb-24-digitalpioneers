@@ -50,6 +50,9 @@ jobs:
         with:
           useLockFile: false
 
+      - name: Compile TypeScript
+        run: npx tsc
+
       - name: Setup on MongoDB
         env:
           SETUP: >-
